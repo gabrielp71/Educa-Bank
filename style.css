@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+ /*UL - Estilizando a Lista não ordenada do Header*/
+
+header {
+    padding: 70px;
+    background-color: rgb(78, 135, 168);
+}
+
+.listaul {
+    display: flex;
+    justify-content: end;  /*Justificando o conteúdo para o fim(posicionamento) do header */
+    margin: 15px;
+}
+
+.listaul li a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+
+.listaul li a:hover {
+    color: blue;
+    transition: 0,8s;
+}
+
+/* Fim do Header */
+
+.section-01 {
+    padding: 200px;
+    background: linear-gradient(180deg, #c0cdcf 8.33%, rgba(90, 168, 168) 100%);
+}
+
+/* background: linear-gradient(180deg, #c0cdcf 8.33%, rgba(90, 168, 168) 100%); */
+
+.section-01 h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.section-01 p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    
+}
+
+.section-01 button {
+    color: rgb(19, 138, 43);
+    width: 300px;
+    height: 50px;
+    border-radius: 50px;
+    border-color: rgb(19, 138, 43);
+
+
+}
+
+.section-01 button:hover {
+    background-color: rgb(19, 138, 43);
+    color: white;
+    border-color: white;
+    transition: 0,8s;
+}
+
+/* Fim da estilização da Primeira sessão */
+
+
+/* Início da Estilização da Section-02 */
+.section-02 {
+    padding: 200px;
+    display: flex;
+    justify-content: space-evenly; /*Alinhamento na Horizontal*/
+    align-items: center;  /*Alinhamento Vertical*/
+    background-color: rgb(226, 233, 233);
+
+}
+
+.divc2 p {
+    font-size: 40px;
+    color: rgb(30, 29, 29);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.divc2 button {
+    
+}
