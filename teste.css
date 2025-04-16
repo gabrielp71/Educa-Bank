@@ -1,0 +1,60 @@
+/*reset basico*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*ajuda a deixar os elementos organizados dentros das caixas*/
+}
+
+header {
+    background-color: rgb(82, 78, 78);
+    padding: 1rem; /*espaçamento interno*/
+    box-shadow: 0 2px 4px gray; /*sombra leve no header*/
+    position: sticky; /*utilizado para deixar o menu suspenso */
+    top: 0; /*zerando a formatação/distancia em relação ao topo*/
+    left: 0;  /*zerando a formatação/distancia em relação a esquerda*/
+    z-index: 999; /* eixo Z utilizado para sobrepôr outros elementos que estarão dentro do site/ sempre um valor maior que zero*/
+}
+
+.container-header {
+    display: flex; /*organizando os itens em linha*/
+    justify-content: space-evenly; /*logo a esquerda botão a direita*/
+    align-items: center; /*alinha verticalmente*/
+    max-width: 1200px; /*limitando a largura maxima que a caixa do conteudo devera atingir*/
+    margin: 0 auto; /*primeiro numero encima e embaixo, segundo numero laterais, centraliza na tela colocando margim 0 no top e bottom e as laterais automatica */
+    padding: 0 1rem; /*primeiro numero encima e embaixo, segundo numero laterais,respiro lateral*/
+}
+
+/*estilizando a logo*/
+.logo {
+    height: 40px; /*altura fixa*/
+    width: auto; /*mantem proporção da imagem*/
+}
+
+/*botão do header*/
+.btn-header {
+    padding: 0.5rem 1rem; /*primeiro numero encima e embaixo, segundo numero laterais.*/
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .container-header {
+        flex-direction: column; /*empilha os itens podemos testar row tambem*/
+        gap: 1rem; /*espaço entre logo e botão*/
+    }
+
+    .logo {
+        height: 32px; /*diminui a logo em telas menores*/
+
+
+    }
+
+    .btn-header {
+        width: 100%; /*botão ocupa largura total*/
+        text-align: center;
+    }
+}
