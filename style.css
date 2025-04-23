@@ -3,8 +3,16 @@
     padding: 0;
     list-style: none;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --font-color: white;
+    --module-size: 1rem;
+    --font-family:Helvetica, arial, sans-serif ;
+    --primary-color:tomato ;
 
 }
+
 
  /*UL - Estilizando a Lista não ordenada do Header*/
 

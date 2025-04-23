@@ -24,3 +24,13 @@ rem = ideal para tamanhos de font globais e layount consistentes.
 
 por que max-width?
 p max width 1200px evita que o conteudo fique muito esticado em telas grandes e mantem o design centrado com margin: o auto. a propriedade max width define a largura maxima que um elemento pode ocupar. isso significa que o elemento pode diminuir de tamanho conforme necessario (em telas menores) mas nunca vai ultrapassar o valor definido.
+
+por que usar media query?
+a @media (max-width: 600px) permite que a estrutura mude para um layount vertical quando a tela for pequena (como celular), otimizando a usabilidade.
+
+por que border-box?
+evita calculos complicados de largura.
+
+ajuda a manter o layount organizado.
+
+é muito usado em layount responsivo, onde o espaço precisa ser bem controlado.

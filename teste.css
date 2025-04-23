@@ -41,7 +41,7 @@ header {
     cursor: pointer;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px) {  /*ira funcionar em tamanho de tela entre 0 e 600px*/
     .container-header {
         flex-direction: column; /*empilha os itens podemos testar row tambem*/
         gap: 1rem; /*espaço entre logo e botão*/
@@ -56,5 +56,71 @@ header {
     .btn-header {
         width: 100%; /*botão ocupa largura total*/
         text-align: center;
+    }
+}
+
+/*estilo da sessão principal - FORA do media query*/
+/*aplica o layount principal da seção destaque em telas grandes*/
+.sessao-destaque {
+    display: flex; /*ativa o flexbox para organizar os elementos lado a lado*/
+    flex-direction: row; /*direção horizontal: imagem texto lado a lado*/
+    text-align: center; /*alinha verticalmente ao centro*/
+    justify-content: space-between; /*espaço entre os elementos*/
+    gap: 2rem; /*espaço entre imagem e texto*/
+    padding: 2rem; /*espaçamento interno*/
+    margin: 0 auto; /*centraliza horizantalmente na tela*/
+    flex-wrap: wrap; /*permite que os elementos quebrem linha se necessário*/
+    background-color: #021b2b; /*cor do fundo*/
+    
+}
+
+/*estilo da imagem dentro da seçao destaque*/
+.destaque-imagem img {
+    width: 100%; /*ocupa toda largura da div*/
+    max-width: 500px; /*limita o tamanho maximo da imagem*/
+    height: auto; /*mantem a proporção da imagem*/
+    border-radius: 10px; /*arredonda os cantos da imagem*/
+    
+}
+
+/*estilo da div que contem o texto*/
+.destaque-texto {
+    max-width: 500px; /*limita a largura ára facilitar a leitura*/
+}
+
+/*estilo do titulo dentro do bloco de texto*/
+.destaque-texto h2 {
+    font-size: 2rem; /*tamanho grande para o titulo*/
+    margin-bottom: 1rem; /*espaçp abaixo do titulo*/
+    color: white; /*cor da letra*/
+
+}
+
+.destaque-texto p {
+    font-size: 1.1rem; /*tamanho agradavel para leitura*/
+    line-height: 1.6; /*espaçamento entre linhas*/
+    color: white; /*cor da letra*/
+
+}
+
+/*responsividade: altera o layount para dispositivos com largura menor que 768px */
+@media (max-width: 768px) {
+    .sessao-destaque {
+        flex-direction: column; /*empilha os elementos em coluna (imagem encima, texto embaixo */
+        align-items: center; /*centraliza os itens no centro da seção*/
+        text-align: center; /*centraliza o texto*/
+    }
+
+    .destaque-imagem,
+    .destaque-texto {
+        max-width: 100%; /*ocupa toda a largura disponivel em telas pequenas*/
+    }
+    
+    .destaque-texto {
+        font-size: 1.5rem; /*reduz o tamanho do titulo em telas menores*/
+    }
+
+    .destaque-texto p {
+        font-size: 1rem; /*reduz o tamanho do parágrafo em telas menores*/
     }
 }
