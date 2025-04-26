@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 2rem 1rem; /*preenchimento superior e infoerior com (2rem), preenchimento laterais esqueda e direita*/
+    background-color: black;
+}
+
+.container {
+padding: 5rem 2rem;
+background-color: blueviolet;
+display: flex;
+justify-content: center;
+flex-wrap: wrap; /*Fará com que as caixas possam ser quebradas se necessário (quando não houver espaço)*/
+align-content: center; /*propriedade que será usada para alinhar as caixas quando quebradas*/
+
+}
+
+.sessao01{
+background-image: url(imagens/pizza-6764430_1280.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+
+
+}
+
+
+.container div {
+border: 10px solid orange; /*(2px = espessura da borda) (solid = Tipo da borda) (orange = cor da borda)*/
+width: 20rem; /*largura da caixa*/
+height: 20rem; /*Altura da caixa*/
+margin: 10px;/*Espaçamento de todos os lados externos da caixa usando o margin*/
+min-width: 299px;/*Limitando o tamanho mínimo que a caixa terá (ela não ficará menor que 299px)*/
+}
+
+.dombosco {
+    background-image: url(imagens/pizzeria-705842_1280.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.div01 p,h2 {
+
+    display: flex;
+    align-items: center;
+   justify-content: center;
+    color: white;
+    background-color: rgb(180, 177, 177);
+
+
+}
+
+.div01 button {
+ 
+    background-color: blue;
+
+}
+
+.div1 img {
+    width: 19rem;
+    height: 19rem;
+    
+
+}
+
+.divpp2 p {
+    color: white;
+    background-color: rgb(180, 177, 177);
+}
+
+.div02 img {
+    width: 19rem;
+    height: 19rem;
+    
+}
+
+
+
+
+
+
+
+@media screen (max-width: 350px) {
+    
+}
